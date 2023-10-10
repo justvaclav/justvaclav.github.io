@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono&display=swap');
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url(fonts/RobotoFlex-ExtraExpanded.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'RobotoFlex';
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'RobotoFlex';
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-family: 'RobotoFlex';
+    font-size: 1.5rem;
+}
+
+* {
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+main, header, footer {
+    display: block;
+    width: 60%;
+    margin: 0 auto 1rem auto;
+}
+
+main {
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: black;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    font-weight: 900;
+}
+
+nav a:visited {
+    color: white;
+}
+
+.input {
+    width: 4rem;
+    height: 1rem;
+    padding: 8px;
+    outline: #777 2px solid;
+    margin: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+
+.chosen {
+    background-color: #fff;
+    color: #000;
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+td > div {
+    display: flex;
+}
+
+tr, td {
+    outline: #999 1px solid;
+    padding: 0.5rem;
+    vertical-align:top;
+}
+
+
+.uidesc {
+    width: 70%;
+}
+
+.uidesc p {
+    margin: 0.5rem 0;
+}
+
+.op1 {
+    width: 50%;
+}
+
+.code {
+    padding: 0.25rem 0.75rem;
+    background: #333;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75em;
+    margin: -0.5rem 0 0.5rem 0;
+}
+
+.params {
+    padding: 0.25rem 0.75rem;
+    background: #333;
+    color: white;
+}
+
+i {
+    font-weight: 400;
+}
+
+.key {
+    margin: 8px;
+    color: white;
+    background: #3300FF;
+    border: white 4px solid;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyClosed {
+    background: black;
+    border: none;
+    padding: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 8px;
+    color: white;
+    background: #3300FF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7755FF;
+}
+
+.btnInactive {    
+    background-color: #1b0084;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.opdesc {
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+}
+
+.opdesc::after {
+    content: "–";
+    margin: 0 0.5rem;
+    font-weight: 400;
+    font-style:normal;
+}
+
+.op {
+    writing-mode: vertical-rl;
+    color: white;
+    background: #2600BE;
+    font-size: 0.75rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    margin-right: -0.25rem;
+    display: inline-block;
+}
+
+@media (max-width: 720px) {
+    main, header, footer {
+        display: flex;
+        
+        width: 96%;
+        margin: 1rem 2%;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+
+a {
+    color: #3300FF;
+}
+
+a:hover {
+    color: #7755FF;
+}
+
+a:visited:hover {
+    color: #7755FF;
+}
+
+a:visited {
+    color: #fb4bfb;
+}
+
+.pink {
+    color: #fb4bfb;
+}
+
+.purple {
+    color: #7755FF;
+}
+
+.blue {
+    color: #3300FF;
+}
+
+.darkblue {
+    color: #2600BE;
+}
+
+.block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    padding: 0 20%;
+}
+
+#block1 {
+    background-image: url('images/helpButton.png');
+    background-position: 95% 280px;
+    background-repeat: no-repeat;
+}
+
+#block2 {
+    background-image: url('images/tilemap\ of\ humans.png');
+    background-position: 5% 150px;
+    background-repeat: no-repeat;
+}
+#block3 {
+    background-image: url('images/gens.jfif');
+    background-position: 85% 300px;
+    background-repeat: no-repeat;
+}
+#block9 {
+    background-image: url('logo.svg');
+    background-position: 110% 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#block7 {
+    background-image: url('images/edith3.png');
+    background-position: 130% 100px;
+    background-repeat: no-repeat;
+}
